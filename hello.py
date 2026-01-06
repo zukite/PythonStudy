@@ -16,3 +16,12 @@ print(sum(odd));
 # 조금 더 줄일 수 있음
 data = [i for i in map(int, input().split()) if i % 2 == 1]
 print(sum(data))
+
+# 파이썬 한 줄 조건문
+# 참일 때 값 if 조건 else 거짓일 때 값
+data = [("High" if i >= 10 else "Low") for i in map(int, input().split())]
+# 실행 순서
+# 1. input().split() : 사용자 문자열을 공백 기준으로 쪼개서 리스트로 생성
+# 2. map(int, ~) : 쪼개진 문자열들을 하나씩 정수(int)로 변환
+# 3. for i in ~ : 변환된 숫자들을 하나씩 꺼내서 i에 대입
+# 4. "High" ~ : i를 검가해서 최종 값을 결정하고 리스트에 넣기
