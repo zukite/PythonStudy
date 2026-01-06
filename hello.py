@@ -24,4 +24,4 @@ data = [("High" if i >= 10 else "Low") for i in map(int, input().split())]
 # 1. input().split() : 사용자 문자열을 공백 기준으로 쪼개서 리스트로 생성
 # 2. map(int, ~) : 쪼개진 문자열들을 하나씩 정수(int)로 변환
 # 3. for i in ~ : 변환된 숫자들을 하나씩 꺼내서 i에 대입
-# 4. "High" ~ : i를 검가해서 최종 값을 결정하고 리스트에 넣기
+# 4. "High" ~ : i를 검사해서 최종 값을 결정하고 리스트에 넣기
