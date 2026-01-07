@@ -25,3 +25,15 @@ data = [("High" if i >= 10 else "Low") for i in map(int, input().split())]
 # 2. map(int, ~) : 쪼개진 문자열들을 하나씩 정수(int)로 변환
 # 3. for i in ~ : 변환된 숫자들을 하나씩 꺼내서 i에 대입
 # 4. "High" ~ : i를 검사해서 최종 값을 결정하고 리스트에 넣기
+
+while True:
+    input_data = input()
+    if input_data == "그만":
+        break
+    if input_data % 2 == 0:
+        print("짝수")
+    else:
+        print("홀수")
+# 위에 코드에서는 형변환 이슈가 발생한다
+# input()으로 받은 값은 컴퓨터가 문자열로 인식
+# 계산을 위해서는 int()로 감싸야 한다 ex. int(input_data)
