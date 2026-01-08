@@ -37,3 +37,18 @@ while True:
 # 위에 코드에서는 형변환 이슈가 발생한다
 # input()으로 받은 값은 컴퓨터가 문자열로 인식
 # 계산을 위해서는 int()로 감싸야 한다 ex. int(input_data)
+
+def check_number(number) : 
+    if number % 2 == 0 :
+        return 'Even'
+    else :
+        return 'Odd' 
+    
+while True :
+    num = input('숫자를 입력하세요 : ' )
+    check_number(int(num))
+    if num == '그만' :
+        break
+# 두가지 오류 발생
+# 1. 숫자인지 먼저 확인하는 것이 아닌 그만이라는 단어가 나왔는지 먼저 확인 후 int형으로 형변환을 해야한다
+# 2. return을 하지만 출력을 하진 않는다 print(check_number(int(num)))를 해줘야 함 
